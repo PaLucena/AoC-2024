@@ -32,8 +32,8 @@ bool	checkReport(std::vector<int> report, bool removedLvl, bool increasing) {
 	
 	for (size_t i = 0; i < report.size(); i++) {
 		std::vector<int>	reportMinusOne = report;
-		reportMinusOne.erase(reportMinusOne.begin() + i);
 
+		reportMinusOne.erase(reportMinusOne.begin() + i);
 		if (checkReport(reportMinusOne, true, increasing))
 			return true;
 	}
